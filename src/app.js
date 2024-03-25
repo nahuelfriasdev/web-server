@@ -1,5 +1,7 @@
-const { envs } = require('./config/env')
-const { startServer } = require('./server/server')
+import { envs } from './config/env.js'
+import { startServer } from './server/server.js'
+// const { envs } = require('./config/env')
+// const { startServer } = require('./server/server')
 
 const main = () => {
   startServer({
@@ -8,11 +10,9 @@ const main = () => {
   })
 }
 
-
-
-
-
-
+//funcion agnostica autocombocada
+//agnostica porque no tiene nombre 
+//auto combocada porque la ejecutamos con los parentesis
 ( async () => {
   main()
 })()
