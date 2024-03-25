@@ -12,9 +12,7 @@ const main = () => {
 
 
 
-//funcion agnostica autocombocada
-//agnostica porque no tiene nombre 
-//auto combocada porque la ejecutamos con los parentesis
+
 ( async () => {
   main()
 })()

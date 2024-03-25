@@ -6,8 +6,8 @@ const startServer = (options) => {
 
   const app = express()
 
-  //para poder usar middlewares se usa la palabra "use" (express)
-  app.use(express.static(public_path))//contenido estatico que ponemos disponible
+  
+  app.use(express.static(public_path))
 
   app.get('*',(req, res) => {
     const indexPath = path.join(__dirname + `../../${public_path}/index.html`)
